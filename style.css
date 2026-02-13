@@ -154,7 +154,7 @@ nav button:hover {
 
 /* Hero Section */
 .hero {
-    text-align: center;
+    text-align: left;
     padding: 80px 20px;
 }
 
@@ -162,16 +162,16 @@ nav button:hover {
     font-size: 48px;
     margin-bottom: 30px;
     background: linear-gradient(45deg, #6b46c1, #3b82f6, #9ca3af);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: left;
 }
 
 .hero-buttons {
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: flex-start;
 }
 
 .btn-primary, .btn-secondary {
@@ -650,12 +650,15 @@ nav button:hover {
 .team-section {
     text-align: left;
     padding: 40px 0;
+    margin-left: 0;
+    align-self: flex-start;
 }
 
 .team-section h2 {
     margin-bottom: 40px;
     font-size: 36px;
     color: #1f2937;
+    text-align: left;
 }
 
 .team-stack {
@@ -665,6 +668,7 @@ nav button:hover {
     max-width: 100%;
     margin: 40px 0;
     justify-content: start;
+    align-self: flex-start;
 }
 
 .team-stack + .team-stack {
@@ -812,9 +816,11 @@ nav button:hover {
 /* Final Text */
 .final-text {
     text-align: center;
-    padding: 40px 50px;
+    padding: 60px 50px;
     font-size: 18px;
     font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 @keyframes gradient {
